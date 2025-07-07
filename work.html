@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piolho</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./work.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="grain-overlay"></div>
+    
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Piolho</div>
+            <nav class="nav">
+                <a href="./index.html" class="nav-item">Inicio</a>
+                <a href="./work.html" class="nav-item">Projetos</a>
+                <a href="./about.html" class="nav-item active">Sobre</a>
+                <a href="https://www.contate.me/5533999411080" class="nav-item" target="_blank">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero-work">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typing-text">Meus Projetos</span>
+                </h1>
+                <p class="hero-subtitle">Descubra meus projetos e realizações</p>
+            </div>
+        </section>
+
+        <section class="filters">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Desktop</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="other">Outro</button>
+            </div>
+        </section>
+
+        <section class="c-grid">
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="054AAC8C-11E5-4695-9C3B-BDBB15C1894D.png" 
+                         alt="Aperçu du site web" 
+                         class="project-img">
+                    <div class="project-placeholder">WEB</div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-website.html" class="project-link">Voir</a>
+                            <a href="#" class="project-link">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Site Web Moderne</h3>
+                    <p class="project-description">Application web responsive avec animations fluides</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="mobile">
+                <div class="project-image">
+                    <div class="project-placeholder">APP</div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-mobile.html" class="project-link">Voir</a>
+                            <a href="#" class="project-link">Store</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Application Mobile</h3>
+                    <p class="project-description">App native avec interface intuitive</p>
+                    <div class="project-tags">
+                        <span class="tag">React Native</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <div class="project-placeholder">UI</div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-design.html" class="project-link">Voir</a>
+                            <a href="#" class="project-link">Figma</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Interface Design</h3>
+                    <p class="project-description">Design system complet et moderne</p>
+                    <div class="project-tags">
+                        <span class="tag">Figma</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="other">
+                <div class="project-image">
+                    <div class="project-placeholder">BOT</div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-bot.html" class="project-link">Voir</a>
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Discord Bot</h3>
+                    <p class="project-description">Bot multifonctionnel avec commandes avancées</p>
+                    <div class="project-tags">
+                        <span class="tag">Discord.js</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="design">
+                <div class="project-image">
+                    <div class="project-placeholder">3D</div>
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="project-3d.html" class="project-link">Voir</a>
+                            <a href="#" class="project-link">Modèle</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Modélisation 3D</h3>
+                    <p class="project-description">Objets 3D réalistes et optimisés</p>
+                    <div class="project-tags">
+                        <span class="tag">Blender</span>
+                        <span class="tag">Three.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="./work.js"></script>
+</body>
+</html>
