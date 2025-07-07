@@ -386,8 +386,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const authUrl = `https://accounts.spotify.com/authorize?` +
             `client_id=${CONFIG.SPOTIFY_CLIENT_ID}&` +
             `response_type=token&` +
-            `redirect_uri=${encodeURIComponent(redirectUri)}&` +
-            `scope=${encodeURIComponent(scopes)}`;
+            `redirect_uri=${enCódigoURIComponent(redirectUri)}&` +
+            `scope=${enCódigoURIComponent(scopes)}`;
         
         window.location.href = authUrl;
     }
