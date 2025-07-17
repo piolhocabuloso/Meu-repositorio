@@ -3,12 +3,13 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4E3B28Z4EB"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-4E3B28Z4EB');
+    gtag('config', 'G-4E3B28Z4EB');
 </script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -127,7 +128,7 @@
             </div>
         </section>
     </main>
-<p>Visitantes: <span id="visitor-count">Carregando...</span></p>
+    <p>Visitantes: <span id="visitor-count">Carregando...</span></p>
 
     <footer class="footer">
         <div class="footer-content">
@@ -139,6 +140,14 @@
     <div class="notification" id="notification"></div>
 
     <script src="./script.js"></script>
+    <script>
+        // Define um namespace e uma chave para o contador
+        fetch('https://api.countapi.xyz/hit/piolho.site/visits')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('visitor-count').innerText = data.value;
+            });
+    </script>
 </body>
 
 </html>
