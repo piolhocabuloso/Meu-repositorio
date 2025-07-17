@@ -587,6 +587,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('✅ Site chargé avec succès!');
 });
+
+  // Define um namespace e uma chave para o contador
+  fetch('https://api.countapi.xyz/hit/piolho.site/visits')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitor-count').innerText = data.value;
+    });
     function copyEmailToClipboard() {
         const email = CONFIG.EMAIL;
         
