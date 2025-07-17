@@ -13,6 +13,10 @@
     --error: #ff4444;
     --offline: #666666;
 }
+::selection {
+  background-color: #666666; /* cor do fundo da seleção */
+  color: #000000; /* cor do texto selecionado */
+}
 
 * {
     margin: 0;
