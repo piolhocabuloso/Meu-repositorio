@@ -545,6 +545,11 @@ body {
     font-size: 0.875rem;
     color: var(--text-muted);
 }
+@media (hover: none) {
+  .cursor {
+    display: none !important;
+  }
+}
 
 .cursor {
     position: fixed;
