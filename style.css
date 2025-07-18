@@ -685,3 +685,53 @@ input:focus, textarea:focus, select:focus, [role="button"]:focus, [onclick]:focu
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+  ::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: linear-gradient(
+      to top,
+      transparent,
+      rgba(60, 60, 60, 0.8),  /* cinza escuro com transparência */
+      rgba(60, 60, 60, 0.8),
+      transparent
+    );
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(
+      to top,
+      transparent,
+      rgba(80, 80, 80, 1), /* mais forte no hover */
+      rgba(80, 80, 80, 1),
+      transparent
+    );
+  }
+}
